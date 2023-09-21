@@ -2,16 +2,18 @@
   "id": 1514,
   "name": "Stephen",
   "authenticationId": "US ID number",
-  "createTime": "21:33 21-09-2023",
+  "createTime": "22:10 21-09-2023",
+  "currentEventPosition": 2,
   "eventList": [
     {
       "id": 222,
       "documentId": 1514,
       "organization": "Springboard",
+      "currentSubEventPosition": 2,
       "assignee": "Lee",
       "description": "create document",
-      "createTime": "21:33 21-09-2023",
-      "completeTime": "21:33 21-09-2023",
+      "createTime": "22:10 21-09-2023",
+      "completeTime": "22:10 21-09-2023",
       "notificationReceiver": "Lee",
       "subEventList": [],
       "eventIndex": 0,
@@ -20,10 +22,11 @@
     {
       "documentId": 1514,
       "organization": "hospital",
+      "currentSubEventPosition": 0,
       "assignee": "May",
       "description": "hospital care",
-      "createTime": "21:33 21-09-2023",
-      "completeTime": "21:33 21-09-2023",
+      "createTime": "22:10 21-09-2023",
+      "completeTime": "22:10 21-09-2023",
       "notificationReceiver": "Lee",
       "subEventList": [
         {
@@ -32,7 +35,7 @@
           "organization": "Xiehe Hospital",
           "assignee": "Lee",
           "description": "health care",
-          "createTime": "21:33 21-09-2023",
+          "createTime": "22:10 21-09-2023",
           "notificationReceiver": "Joey",
           "eventStatus": "IN_PROGRESS"
         },
@@ -42,8 +45,8 @@
           "organization": "Xiehe Hospital",
           "assignee": "Lee",
           "description": "health care",
-          "createTime": "21:33 21-09-2023",
-          "completeTime": "21:33 21-09-2023",
+          "createTime": "22:10 21-09-2023",
+          "completeTime": "22:10 21-09-2023",
           "notificationReceiver": "Joey",
           "eventStatus": "COMPLETED"
         }

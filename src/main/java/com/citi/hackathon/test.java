@@ -44,6 +44,7 @@ public class test {
         System.out.println("_______________________________________________________");
 
         Event event1=new Event();
+        event1.setCurrentSubEventPosition(2);
         event1.setId(222L);
         event1.setAssignee("Lee");
         event1.setEventIndex(0);
@@ -57,6 +58,7 @@ public class test {
         event1.setNotificationReceiver("Lee");
 
         Event event2=new Event();
+        event2.setCurrentSubEventPosition(0);
         event2.setAssignee("May");
         event2.setEventIndex(1);
         event2.setEventStatus(EventStatus.IN_PROGRESS);
@@ -72,6 +74,7 @@ public class test {
         System.out.println("_______________________________________________________");
 
         UserDocument document=new UserDocument();
+        document.setCurrentEventPosition(2);
         document.setName("Stephen");
         document.setId(1514L);
         document.setAuthenticationId("US ID number");

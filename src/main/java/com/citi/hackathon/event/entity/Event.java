@@ -9,6 +9,7 @@ public class Event {
     private Long id;
     private Long documentId;
     private String organization;
+    private int currentSubEventPosition;
     private String assignee;
     private String description;
     private String createTime;
