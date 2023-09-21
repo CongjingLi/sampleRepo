@@ -1,4 +1,4 @@
-package com.citi.hackathon.login.entity;
+package com.citi.hackathon.volunteerInfo.entity;
 
 import lombok.Data;
 
