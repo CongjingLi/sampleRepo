@@ -7,6 +7,8 @@ import java.util.Date;
 @Data
 public class SubEvent {
     private Long id;
+    private int subEventIndex;
+    private Long eventId;
     private String organization;
     private String assignee;
     private String description;

@@ -25,6 +25,8 @@ public class test {
         subEvent1.setDescription("health care");
         subEvent1.setOrganization("Xiehe Hospital");
         subEvent1.setNotificationReceiver("Joey");
+        subEvent1.setSubEventIndex(0);
+        subEvent1.setEventId(222L);
         subEvent1.setCreateTime(sdf.format(new Date()));
 
         SubEvent subEvent2=new SubEvent();
@@ -34,12 +36,15 @@ public class test {
         subEvent2.setOrganization("Xiehe Hospital");
         subEvent2.setNotificationReceiver("Joey");
         subEvent2.setCreateTime(sdf.format(new Date()));
+        subEvent2.setSubEventIndex(1);
+        subEvent2.setEventId(222L);
         subEvent2.setCompleteTime(sdf.format(new Date()));
         Gson gson=new Gson();
         System.out.println(gson.toJson(subEvent1));
         System.out.println("_______________________________________________________");
 
         Event event1=new Event();
+        event1.setId(222L);
         event1.setAssignee("Lee");
         event1.setEventIndex(0);
         event1.setEventStatus(EventStatus.COMPLETED);
@@ -48,6 +53,7 @@ public class test {
         event1.setCreateTime(sdf.format(new Date()));
         event1.setOrganization("Springboard");
         event1.setSubEventList(new ArrayList<>());
+        event1.setDocumentId(1514L);
         event1.setNotificationReceiver("Lee");
 
         Event event2=new Event();
@@ -58,6 +64,7 @@ public class test {
         event2.setCompleteTime(sdf.format(new Date()));
         event2.setCreateTime(sdf.format(new Date()));
         event2.setOrganization("hospital");
+        event2.setDocumentId(1514L);
         event2.setSubEventList(List.of(subEvent1,subEvent2));
         event2.setNotificationReceiver("Lee");
 
@@ -66,6 +73,7 @@ public class test {
 
         UserDocument document=new UserDocument();
         document.setName("Stephen");
+        document.setId(1514L);
         document.setAuthenticationId("US ID number");
         document.setEventList(List.of(event1,event2));
         document.setCreateTime(sdf.format(new Date()));
